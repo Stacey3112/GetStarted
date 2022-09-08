@@ -1,0 +1,68 @@
+h1 {
+  color: #2d3e4f;
+  font-weight: bold;
+}
+ul {
+  font-size: smaller;
+  padding: 30px 10px 10px 35px;
+  text-align: left;
+}
+li {
+  list-style-type: none;
+}
+button {
+  border: none;
+  opacity: 30%;
+  background-color: white;
+}
+button:hover {
+  opacity: 90%;
+  color: #42c0fb;
+}
+.container {
+  text-align: center;
+  font-family: "Roboto Serif", serif;
+}
+.currentTime {
+  color: #2d3e4f;
+  text-align: left;
+  padding: 6px 10px 1px 35px;
+  font-weight: bold;
+}
+.search {
+  font-weight: bold;
+  margin: 0 0 0 35px;
+  opacity: 50%;
+  border-radius: 3px;
+  box-shadow: 3px 3px 6px #999999;
+}
+.maincolomn {
+  margin: 0;
+  padding: 5px 10px 0px 0px;
+}
+.rightcolomn {
+  margin: 0;
+  padding: 5px 10px 0px 0px;
+}
+.grad1 {
+  font-size: 14px;
+  vertical-align: 6px;
+}
+.grad2 {
+  font-size: 12px;
+  vertical-align: 4px;
+}
+.grad {
+  font-size: 10px;
+  vertical-align: 3px;
+}
+.cgrad:hover {
+  color: #08088b;
+  cursor: pointer;
+  font-size: 120%;
+}
+.fgrad:hover {
+  color: #08088b;
+  cursor: pointer;
+  font-size: 120%;
+}

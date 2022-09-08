@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/43fc3328d5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,200&family=Square+Peg&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="d-flex p-2 bd-highlight justify-content-center">
+        <div class="card maincard w-50 shadow pt-2 pb-0 mb-5 bg-white rounded">
+          <form id="search-form">
+            <input
+              class="search"
+              type="text"
+              style="border: 1px solid black"
+              placeholder="Search..."
+              autofocus="on"
+            />
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            <input
+              type="submit"
+              name="current-location-button"
+              value="current location"
+              class="btn btn-warning"
+              id="current-location"
+            />
+          </form>
+          <div class="currentTime"></div>
+          <div class="row">
+            <div class="col-4">
+              <ul>
+                <li class="currentData">
+                  <span class="currentDate">7</span>.<span class="currentMonth"
+                    >August</span
+                  >
+                </li>
+                <li class="dayOfWeek">Monday</li>
+                <li>Humidity: <span class="humidity">47</span>%</li>
+                <li>Wind: <span class="wind">21</span> m/s</li>
+              </ul>
+            </div>
+            <div class="col-4 maincolomn">
+              <h1>Berlin</h1>
+              <h3>
+                <span class="change-temperature"> 25</span
+                ><span class="grad1"
+                  ><span class="cgrad">°C</span>|<span class="fgrad">
+                    °F</span
+                  ></span
+                >
+              </h3>
+
+              <h5>
+                <span class="temp-max">31</span
+                ><span class="grad2">°C</span>/<span class="temp-min">18</span
+                ><span class="grad2">°C</span>
+              </h5>
+            </div>
+            <div class="col-4 rightcolomn">
+              <img src="imgs/sun.ico" alt="sun" width="100px" />
+              <br />
+              <span class="weather-description">Sunny</span>
+            </div>
+          </div>
+          <div class="card-group">
+            <div class="card">
+              <div class="card-body">
+                <h6 class="card-title">
+                  Mon <br />
+                  8.Aug
+                </h6>
+                <img src="imgs/cloud.ico" alt="..." width="50px" />
+                <p class="card-text">
+                  <small class="text-muted"
+                    >28<span class="grad">°C</span>/17<span class="grad"
+                      >°C</span
+                    >
+                  </small>
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h6 class="card-title">
+                  Tue <br />
+                  9.Aug
+                </h6>
+                <img src="imgs/sun.ico" alt="..." width="50px" />
+                <p class="card-text">
+                  <small class="text-muted"
+                    >28<span class="grad">°C</span>/17<span class="grad"
+                      >°C</span
+                    >
+                  </small>
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h6 class="card-title">
+                  Wed<br />
+                  10.Aug
+                </h6>
+                <img src="imgs/storm.ico" alt="..." width="50px" />
+                <p class="card-text">
+                  <small class="text-muted"
+                    >28<span class="grad">°C</span>/17<span class="grad"
+                      >°C</span
+                    >
+                  </small>
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h6 class="card-title">
+                  Thu <br />
+                  11.Aug
+                </h6>
+                <img src="imgs/partly-cloudy.ico" alt="..." width="50px" />
+                <p class="card-text">
+                  <small class="text-muted"
+                    >28<span class="grad">°C</span>/17<span class="grad"
+                      >°C</span
+                    >
+                  </small>
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h6 class="card-title">
+                  Fri <br />
+                  12.Aug
+                </h6>
+                <img src="imgs/rain.ico" alt="..." width="50px" />
+                <p class="card-text">
+                  <small class="text-muted"
+                    >28<span class="grad">°C</span>/17<span class="grad"
+                      >°C</span
+                    >
+                  </small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
