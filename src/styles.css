@@ -19,6 +19,7 @@ button:hover {
   opacity: 90%;
   color: #42c0fb;
 }
+
 .container {
   text-align: center;
   font-family: "Roboto Serif", serif;
@@ -65,4 +66,7 @@ button:hover {
   color: #08088b;
   cursor: pointer;
   font-size: 120%;
+}
+.footer {
+  text-align: center;
 }
