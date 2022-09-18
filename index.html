@@ -26,145 +26,46 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
-    <div class="container">
-      <div class="d-flex p-2 bd-highlight justify-content-center">
-        <div class="card maincard w-50 shadow pt-2 pb-0 mb-5 bg-white rounded">
-          <form id="search-form">
-            <input
-              class="search"
-              type="text"
-              style="border: 1px solid black"
-              placeholder="Search..."
-              autofocus="on"
-            />
-            <button><i class="fa-solid fa-magnifying-glass"></i></button>
-            <input
-              type="submit"
-              name="current-location-button"
-              value="current location"
-              class="btn btn-warning"
-              id="current-location"
-            />
-          </form>
-          <div class="currentTime"></div>
-          <div class="row">
-            <div class="col-4">
-              <ul>
-                <li class="currentData">
-                  <span class="currentDate">7</span>.<span class="currentMonth"
-                    >August</span
-                  >
-                </li>
-                <li class="dayOfWeek">Monday</li>
-                <li>Humidity: <span class="humidity">47</span>%</li>
-                <li>Wind: <span class="wind">21</span> m/s</li>
-              </ul>
-            </div>
-            <div class="col-4 maincolomn">
-              <h1>Berlin</h1>
-              <h3>
-                <span class="change-temperature"> 25</span
-                ><span class="grad1"
-                  ><span class="cgrad">°C</span>|<span class="fgrad">
-                    °F</span
-                  ></span
-                >
-              </h3>
-
-              <h5>
-                <span class="temp-max">31</span
-                ><span class="grad2">°C</span>/<span class="temp-min">18</span
-                ><span class="grad2">°C</span>
-              </h5>
-            </div>
-            <div class="col-4 rightcolomn">
-              <img src="imgs/sun.ico" alt="sun" width="100px" />
-              <br />
-              <span class="weather-description">Sunny</span>
-            </div>
-          </div>
-          <div class="card-group">
-            <div class="card">
-              <div class="card-body">
-                <h6 class="card-title">
-                  Mon <br />
-                  8.Aug
-                </h6>
-                <img src="imgs/cloud.ico" alt="..." width="50px" />
-                <p class="card-text">
-                  <small class="text-muted"
-                    >28<span class="grad">°C</span>/17<span class="grad"
-                      >°C</span
-                    >
-                  </small>
-                </p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-body">
-                <h6 class="card-title">
-                  Tue <br />
-                  9.Aug
-                </h6>
-                <img src="imgs/sun.ico" alt="..." width="50px" />
-                <p class="card-text">
-                  <small class="text-muted"
-                    >28<span class="grad">°C</span>/17<span class="grad"
-                      >°C</span
-                    >
-                  </small>
-                </p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-body">
-                <h6 class="card-title">
-                  Wed<br />
-                  10.Aug
-                </h6>
-                <img src="imgs/storm.ico" alt="..." width="50px" />
-                <p class="card-text">
-                  <small class="text-muted"
-                    >28<span class="grad">°C</span>/17<span class="grad"
-                      >°C</span
-                    >
-                  </small>
-                </p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-body">
-                <h6 class="card-title">
-                  Thu <br />
-                  11.Aug
-                </h6>
-                <img src="imgs/partly-cloudy.ico" alt="..." width="50px" />
-                <p class="card-text">
-                  <small class="text-muted"
-                    >28<span class="grad">°C</span>/17<span class="grad"
-                      >°C</span
-                    >
-                  </small>
-                </p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-body">
-                <h6 class="card-title">
-                  Fri <br />
-                  12.Aug
-                </h6>
-                <img src="imgs/rain.ico" alt="..." width="50px" />
-                <p class="card-text">
-                  <small class="text-muted"
-                    >28<span class="grad">°C</span>/17<span class="grad"
-                      >°C</span
-                    >
-                  </small>
-                </p>
-              </div>
-            </div>
-          </div>
+    <div class="weather-app">
+      <form id="search-form">
+        <input
+          class="search"
+          type="text"
+          style="border: 1px solid black"
+          placeholder="Search..."
+          autofocus="on"
+        />
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+      </form>
+      <div class="currentTime"></div>
+      <div class="row">
+        <div class="col-4">
+          <ul>
+            <li class="currentData">
+              <span class="currentDate">7</span>.<span class="currentMonth"
+                >August</span
+              >
+            </li>
+            <li class="dayOfWeek">Monday</li>
+            <li>Humidity: <span class="humidity"></span>%</li>
+            <li>Wind: <span class="wind"></span> km/h</li>
+          </ul>
+        </div>
+        <div class="col-4 maincolomn">
+          <h1>Berlin</h1>
+          <h3>
+            <span class="change-temperature"></span
+            ><span class="grad1"
+              ><span class="cgrad">°C</span>|<span class="fgrad">
+                °F</span
+              ></span
+            >
+          </h3>
+        </div>
+        <div class="col-4 rightcolomn">
+          <img class="icon" src="http://openweathermap.org/img/wn/10d@2x.png" />
+          <br />
+          <span class="weather-description">Rain</span>
         </div>
       </div>
     </div>

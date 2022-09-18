@@ -1,10 +1,14 @@
 h1 {
   color: #2d3e4f;
   font-weight: bold;
+  text-align: center;
+}
+h3 {
+  margin-top: 20px;
 }
 ul {
   font-size: smaller;
-  padding: 30px 10px 10px 35px;
+  padding: 45px 10px 10px 35px;
   text-align: left;
 }
 li {
@@ -12,23 +16,32 @@ li {
 }
 button {
   border: none;
-  opacity: 30%;
-  background-color: white;
+  background-color: #457dae;
 }
 button:hover {
   opacity: 90%;
   color: #42c0fb;
 }
 
-.container {
-  text-align: center;
+.weather-app {
+  background: url("https://media.istockphoto.com/vectors/blue-sky-with-altostratus-clouds-backgroundvector-cartoon-sky-with-vector-id1321474586?k=20&m=1321474586&s=612x612&w=0&h=TRxzWx9Zg9c7MW7IU3BlAxXb_wvuEgCthpL44eLfEyM=");
+  background-size: 100% 100%;
   font-family: "Roboto Serif", serif;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #dadde1;
+  box-shadow: 3px 3px 6px #999999;
 }
 .currentTime {
   color: #2d3e4f;
   text-align: left;
   padding: 6px 10px 1px 35px;
   font-weight: bold;
+  font-size: larger;
+}
+#search-form {
+  text-align: center;
 }
 .search {
   font-weight: bold;
@@ -39,24 +52,20 @@ button:hover {
 }
 .maincolomn {
   margin: 0;
-  padding: 5px 10px 0px 0px;
+  padding: 25px 10px 0px 0px;
+  text-align: center;
 }
 .rightcolomn {
   margin: 0;
   padding: 5px 10px 0px 0px;
+  text-align: center;
 }
+
 .grad1 {
   font-size: 14px;
   vertical-align: 6px;
 }
-.grad2 {
-  font-size: 12px;
-  vertical-align: 4px;
-}
-.grad {
-  font-size: 10px;
-  vertical-align: 3px;
-}
+
 .cgrad:hover {
   color: #08088b;
   cursor: pointer;
@@ -69,4 +78,5 @@ button:hover {
 }
 .footer {
   text-align: center;
+  margin: 10px auto;
 }
