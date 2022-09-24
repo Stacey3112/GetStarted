@@ -80,3 +80,17 @@ button:hover {
   text-align: center;
   margin: 10px auto;
 }
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+}
+.weather-forecast-date {
+  font-size: 15px;
+  opacity: 0.8;
+}
+.weather-forecast-temperatures {
+  font-size: 13px;
+}
+.weather-forecast-temperature-min {
+  opacity: 0.7;
+}

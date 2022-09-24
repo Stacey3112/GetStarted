@@ -40,6 +40,32 @@ let nowDate = document.querySelector(".currentDate");
 let nowData = document.querySelector(".currentData");
 nowData.innerHTML = `${date}.${month}`;
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  let days = ["Thu", "Fri", "Sat", "Sun"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+  
+            <div class="col-2">
+              <div class="weather-forecast-date">${day}</div>
+              <img
+                src="http://openweathermap.org/img/wn/10d@2x.png"
+                width="42"
+              />
+              <div class="weather-forecast-temperatures">
+                <span class="weather-forecast-temperature-max">18°C</span>
+                <span class="weather-forecast-temperature-min">12°C</span>
+              </div>
+            </div>
+          `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
 function searchCity(event) {
   event.preventDefault();
   let apiKey = "13cbcecbda9856a9b604a0ab457846ec";
@@ -106,3 +132,5 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
 let celsiusLink = document.querySelector(".cgrad");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
+
+displayForecast();
