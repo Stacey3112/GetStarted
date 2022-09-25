@@ -109,6 +109,7 @@ function searchCity(event) {
   }
   axios.get(apiUrl).then(showWeather);
 }
+
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", searchCity);
 

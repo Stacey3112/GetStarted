@@ -16,7 +16,7 @@ li {
 }
 button {
   border: none;
-  background-color: #457dae;
+  background: transparent;
 }
 button:hover {
   opacity: 90%;
@@ -24,7 +24,12 @@ button:hover {
 }
 
 .weather-app {
-  background: url("https://media.istockphoto.com/vectors/blue-sky-with-altostratus-clouds-backgroundvector-cartoon-sky-with-vector-id1321474586?k=20&m=1321474586&s=612x612&w=0&h=TRxzWx9Zg9c7MW7IU3BlAxXb_wvuEgCthpL44eLfEyM=");
+  background: linear-gradient(
+      to top,
+      rgba(255, 0, 0, 0.2),
+      rgba(151, 218, 236, 0.2)
+    ),
+    url("https://media.istockphoto.com/vectors/blue-sky-with-altostratus-clouds-backgroundvector-cartoon-sky-with-vector-id1321474586?k=20&m=1321474586&s=612x612&w=0&h=TRxzWx9Zg9c7MW7IU3BlAxXb_wvuEgCthpL44eLfEyM=");
   background-size: 100% 100%;
   font-family: "Roboto Serif", serif;
   max-width: 600px;
@@ -86,11 +91,11 @@ button:hover {
 }
 .weather-forecast-date {
   font-size: 15px;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 .weather-forecast-temperatures {
   font-size: 13px;
 }
 .weather-forecast-temperature-min {
-  opacity: 0.7;
+  opacity: 0.8;
 }
